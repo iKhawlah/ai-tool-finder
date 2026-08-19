@@ -1,35 +1,104 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    text-align: center;
-    padding: 80px 20px;
-    color: #222;
-}
-h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
+* {
+    box-sizing: border-box;
 }
 
-p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 30px;
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f7f7f8;
+    color: #18181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: #e9e9ff;
+    color: #4f46e5;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 56px;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.subtitle {
+    font-size: 19px;
+    color: #71717a;
+    margin: 20px auto 35px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    background: white;
+    padding: 8px;
+    border: 1px solid #e4e4e7;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
 input {
-    width: 60%;
-    max-width: 500px;
-    padding: 15px;
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 16px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    background: transparent;
 }
 
 button {
-    padding: 15px 25px;
-    margin-left: 10px;
-    font-size: 16px;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
+    padding: 0 24px;
+    background: #18181b;
+    color: white;
+    font-size: 15px;
     cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#result {
+    margin-top: 30px;
+    text-align: left;
+}
+
+#result h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tool-card {
+    background: white;
+    border: 1px solid #e4e4e7;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 12px;
+}
+
+.tool-card h3 {
+    margin: 0 0 8px;
+}
+
+.tool-card p {
+    margin: 0;
+    color: #71717a;
 }
