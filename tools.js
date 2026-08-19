@@ -15,8 +15,8 @@ const tools = [
         description: "Good for writing, coding, and analyzing information."
     },
     {
-        name: "Canva AI",
-        categories: ["image", "design", "presentation"],
-        description: "Good for graphic design, presentations, and social media."
-    }
+    name: "Canva AI",
+    categories: ["image", "design", "presentation"],
+    description: "Good for graphic design, presentations, and social media."
+}
 ];
