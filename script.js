@@ -83,10 +83,10 @@ if (
     result.innerHTML = `
         <h2>Recommended AI Tools</h2>
         ${recommendedTools.map(tool => `
-            <div>
-                <h3>${tool.name}</h3>
-                <p>${tool.description}</p>
-            </div>
+          <div class="tool-card">
+    <h3>${tool.name}</h3>
+    <p>${tool.description}</p>
+</div>
         `).join("")}
     `;
 }
