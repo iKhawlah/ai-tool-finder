@@ -7,12 +7,7 @@ function findTools() {
         return;
     }
 
-    if (
-        userInput.includes("image") ||
-        userInput.includes("picture") ||
-        userInput.includes("photo") ||
-        userInput.includes("صورة")
-    ) {
+    if (userInput.includes("image") || userInput.includes("picture") || userInput.includes("صورة")) {
         result.innerHTML = `
             <h2>Recommended AI Tools</h2>
             <p>Gemini</p>
