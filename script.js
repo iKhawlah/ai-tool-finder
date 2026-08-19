@@ -7,17 +7,54 @@ function findTools() {
         return;
     }
 
-    if (userInput.includes("image") || userInput.includes("picture") || userInput.includes("صورة")) {
-        result.innerHTML = `
-            <h2>Recommended AI Tools</h2>
-            <p>Gemini</p>
-            <p>ChatGPT</p>
-            <p>Canva AI</p>
-        `;
-    } else {
+    let category = "";
+
+    if (
+        userInput.includes("image") ||
+        userInput.includes("picture") ||
+        userInput.includes("photo") ||
+        userInput.includes("صورة")
+    ) {
+        category = "image";
+    } else if (
+        userInput.includes("write") ||
+        userInput.includes("writing") ||
+        userInput.includes("article")
+    ) {
+        category = "writing";
+    } else if (
+        userInput.includes("code") ||
+        userInput.includes("coding") ||
+        userInput.includes("program")
+    ) {
+        category = "coding";
+    } else if (
+        userInput.includes("data") ||
+        userInput.includes("analysis") ||
+        userInput.includes("analyze")
+    ) {
+        category = "analysis";
+    }
+
+    if (category === "") {
         result.innerHTML = `
             <h2>We need more information</h2>
             <p>Try describing what you want to create.</p>
         `;
+        return;
     }
+
+    const recommendedTools = tools.filter(tool =>
+        tool.categories.includes(category)
+    );
+
+    result.innerHTML = `
+        <h2>Recommended AI Tools</h2>
+        ${recommendedTools.map(tool => `
+            <div>
+                <h3>${tool.name}</h3>
+                <p>${tool.description}</p>
+            </div>
+        `).join("")}
+    `;
 }
