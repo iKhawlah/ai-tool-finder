@@ -9,17 +9,52 @@
 
 <body>
 
-  <div class="container">
+ <div class="container">
 
-    <div class="badge">AI TOOL FINDER</div>
+    <nav>
+        <div class="logo">AI FINDER.</div>
+        <div class="nav-link">Find the right tool.</div>
+    </nav>
 
-    <h1>Find the right AI for your task.</h1>
+    <div class="hero">
 
-    <p class="subtitle">
-        Tell us what you want to do, and we'll recommend the best AI tools for you.
-    </p>
+        <div class="badge">TOOL DISCOVERY</div>
 
-    <div class="search-box">
+        <h1>
+            What are
+            you <span class="highlight">trying</span>
+            to do?
+        </h1>
+
+        <p class="subtitle">
+            Tell us what you need, and we'll help you find the AI tool
+            that fits the job.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                placeholder="I want to create a presentation..."
+            >
+
+            <button onclick="findTools()">
+                Find Tools →
+            </button>
+
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+    <div class="shape circle"></div>
+    <div class="shape square"></div>
+
+</div>
+
+<script src="tools.js"></script>
+<script src="script.js"></script>
 
         <input
             type="text"
