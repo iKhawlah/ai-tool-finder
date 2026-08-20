@@ -1,22 +1,41 @@
 const tools = [
     {
-        name: "Gemini",
-        categories: ["image", "writing", "research"],
-        description: "Good for images, writing, and research."
+        name: "GPT Image 2",
+        category: "image",
+        bestFor: "General image generation",
+        description: "Great for following detailed prompts and creating images with text.",
+        pricing: "Free and paid options"
     },
+
     {
-        name: "ChatGPT",
-        categories: ["image", "writing", "coding", "research"],
-        description: "Good for writing, coding, images, and general tasks."
+        name: "Nano Banana Pro",
+        category: "image",
+        bestFor: "Realistic images and editing",
+        description: "Great for realistic images and conversational image editing.",
+        pricing: "Free and paid options"
     },
+
     {
-        name: "Claude",
-        categories: ["writing", "coding", "analysis"],
-        description: "Good for writing, coding, and analyzing information."
+        name: "Midjourney",
+        category: "image",
+        bestFor: "Artistic images and concept art",
+        description: "Excellent for artistic styles, concept art, and creative visuals.",
+        pricing: "Paid"
     },
+
     {
-    name: "Canva AI",
-    categories: ["image", "design", "presentation"],
-    description: "Good for graphic design, presentations, and social media."
-}
+        name: "FLUX",
+        category: "image",
+        bestFor: "Realistic images and API workflows",
+        description: "A strong choice for realistic image generation and developer workflows.",
+        pricing: "Free and paid options"
+    },
+
+    {
+        name: "Canva AI",
+        category: "image",
+        bestFor: "Design and ready-to-use graphics",
+        description: "Great for users who want to generate and edit designs easily.",
+        pricing: "Free and paid options"
+    }
 ];
