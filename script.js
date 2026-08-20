@@ -9,7 +9,6 @@ function findTools() {
         `;
         return;
     }
-
     let category = "";
 
     // Images
